@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filizi Villa, Paros | Gaia Estates</title>
+  <meta name="description" content="Filizi Villa in Paros, Greece. 7-bedroom luxury residence with sea views, pool, and modern living spaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <p class="brand">Gaia Estates</p>
+      <a class="cta" href="#contact">Arrange a Viewing</a>
+    </nav>
+    <div class="hero-content">
+      <p class="overline">Paros, Cyclades</p>
+      <h1>Filizi Villa</h1>
+      <p class="lead">A newly built coastal villa blending private luxury with panoramic Aegean views.</p>
+      <ul class="quick-facts">
+        <li>Built in 2024</li>
+        <li>7 Bedrooms, 7 Bathrooms</li>
+        <li>Approx. 400 sqm house</li>
+        <li>4,000 sqm land plot</li>
+      </ul>
+    </div>
+    <img src="./assets/image5.png" alt="Filizi Villa exterior and surrounding landscape" class="hero-image">
+  </header>
+
+  <main>
+    <section class="panel specs">
+      <h2>Property Highlights</h2>
+      <div class="spec-grid">
+        <article>
+          <h3>Comfort and Scale</h3>
+          <p>Generous indoor and outdoor living, with a staff room and bathroom plus dedicated lounge zones.</p>
+        </article>
+        <article>
+          <h3>Sea-Facing Lifestyle</h3>
+          <p>Set just 100 meters from the sea with views stretching from the garden and pool terraces.</p>
+        </article>
+        <article>
+          <h3>Ready for Entertaining</h3>
+          <p>Large pool, outdoor barbeque, modern kitchen, and multiple dining spaces for effortless hosting.</p>
+        </article>
+      </div>
+      <figure class="feature-image">
+        <img src="./assets/image10.png" alt="Filizi Villa pool with garden and sea view">
+      </figure>
+    </section>
+
+    <section class="panel location">
+      <h2>Prime Location</h2>
+      <ul class="distance-list">
+        <li>5 minutes to Mikri Santa Beach</li>
+        <li>8 minutes to Naoussa town</li>
+        <li>20 minutes to the Port of Parikia</li>
+        <li>30 minutes to Punda Port (for Antiparos)</li>
+      </ul>
+      <div class="location-media">
+        <img src="./assets/image14 map.jpg" alt="Map and location context for Filizi Villa">
+        <img src="./assets/image15 map.jpg" alt="Aerial sea view near the villa">
+      </div>
+    </section>
+
+    <section class="panel lifestyle">
+      <h2>Living Experience</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="./assets/image7.png" alt="Interior living and dining areas">
+          <figcaption>Modern kitchen, TV lounge, and indoor dining.</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/image6.png" alt="Outdoor barbeque and dining zone">
+          <figcaption>Indoor and outdoor cooking with dedicated barbeque space.</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/image10.png" alt="Swimming pool overlooking garden and sea">
+          <figcaption>Pool area with sea-view ambiance and landscaped garden.</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/image8.png" alt="Bedroom and private lounge arrangement">
+          <figcaption>Private bedroom lounges and workstation comfort.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel tour">
+      <h2>Video Tour</h2>
+      <p>Scan the QR code or open the video link directly.</p>
+      <div class="tour-card">
+        <img src="./assets/image11.jpg" alt="QR code for external video tour">
+        <a href="http://www.youtube.com/watch?v=BSXOsxSY9FM" target="_blank" rel="noopener noreferrer">Open YouTube Tour</a>
+      </div>
+    </section>
+
+    <section class="panel floors">
+      <h2>Floor Breakdown</h2>
+      <div class="floor-grid">
+        <article>
+          <h3>Ground Floor</h3>
+          <p>Kitchen and living area with sea view, one ensuite bedroom, guest bathroom/shower, and outdoor barbeque-pool zone with pool bathroom.</p>
+          <img src="./assets/image3.png" alt="Ground floor plan and notes">
+        </article>
+        <article>
+          <h3>First Floor</h3>
+          <p>One master bedroom with bathroom, two rooms sharing one bathroom, and a large sea-view balcony with sitting area and jacuzzi.</p>
+          <img src="./assets/image9.png" alt="First floor plan and notes">
+        </article>
+        <article>
+          <h3>Lower Ground</h3>
+          <p>Three full bedrooms with ensuite bathrooms, sunken private garden/patio, plus staff room with separate entrance and bathroom.</p>
+          <img src="./assets/image1.png" alt="Lower ground floor plan and notes">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <img src="./assets/image12.png" alt="Gaia Estates closing slide artwork">
+    <div>
+      <h2>Contact</h2>
+      <p>Aliki</p>
+      <a href="tel:+447902789687">+44 7902 789687</a>
+      <p class="small">Presented by Gaia Estates</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close enlarged image">Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImage = document.getElementById("lightbox-image");
+      const closeButton = document.getElementById("lightbox-close");
+      const zoomableImages = Array.from(document.querySelectorAll("img")).filter(
+        (img) => !img.closest(".contact") && !img.closest(".lightbox")
+      );
+
+      function closeLightbox() {
+        lightbox.classList.remove("open");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImage.src = "";
+        lightboxImage.alt = "";
+      }
+
+      zoomableImages.forEach((img) => {
+        img.classList.add("zoomable");
+        img.addEventListener("click", () => {
+          lightboxImage.src = img.src;
+          lightboxImage.alt = img.alt || "Enlarged property image";
+          lightbox.classList.add("open");
+          lightbox.setAttribute("aria-hidden", "false");
+        });
+      });
+
+      closeButton.addEventListener("click", closeLightbox);
+      lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeLightbox();
+      });
+    })();
+  </script>
+</body>
+</html>
